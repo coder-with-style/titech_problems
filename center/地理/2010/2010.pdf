@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<title>センター試験解答速報2010</title>
+<link href="rayout-mondai.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="body">
+		
+		<div id="title">
+			<a href="/center/" target="_parent"><img src="images/2010/tit-s.jpg" border="0" /></a>
+			<div class="shakai">地理Ｂ</div>
+		</div>
+		<div class="menu"><a href="chiri-b_mondai_0.html" target="content">問題</a> | <a href="chiri-b_ans.html" 地理Ｂ>解答</a> | <a href="./pdf/kaisetsu/chiri-b_k.pdf" >解説</a> | <a href="chiri-b_shousai.html#overview" 地理Ｂ>全体概観</a> | <a href="chiri-b_shousai.html#analysis" 地理Ｂ>設問別分析</a> | アドバイス(<a href="chiri-b_advice.html#advice" 地理Ｂ>新高３生</a> | <a href="chiri-b_advice.html#advice2" 地理Ｂ>新高２生</a>) | <a href="content.html" target="_self">トップページへ</a>　|　<a href="http://www.toshin.com/nyushi/" target="_blank">過去問データベース</a>　|　<a href="http://www.toshin.com/univ/" target="_blank">大学案内</a></div>
+				<div class="toi" align="right"><a href="./pdf/a/chiri-b_ans.pdf">ＰＤＦで見る<img src="images/pdficon_large.gif" width="32" height="32" border="0" align="absmiddle" /></a> </div>
+				
+		<div class="txt" align="center">
+		<p><img src="./a/chiri-b_ans.gif"></p>
+		</p>
+		</div>
+		
+		<div id="cr" align="right">Copyright (C) Nagase brothers Inc. </div>
+
+	</div>
+<script language="JavaScript" src="s_code.js" charset="utf-8"></script>
+<script language="JavaScript" src="sitecatalyst.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="/js/tracking_code.js" charset="utf-8"></script>
+</body>
+
+</html>

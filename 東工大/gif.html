@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        p#backward {
+            position: fixed;
+            top: 2px;
+            right: 14px;
+            border: 1px solid;
+        }
+        p#forward {
+            position: fixed;
+            top: 35px;
+            right: 14px;
+            border: 1px solid;
+        }
+
+    </style>
+</head>
+<body>
+<img src="" alt="">
+<p id="backward">前へ</p>
+<p id="forward"> 次へ</p>
+<script>
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+    $(function () {
+        var num=1;
+        var pageDic={"math":5,"chemistry":3,"physics":3,"english":2};
+        var _year=getQueryString("year");
+           var subj=getQueryString("id");
+        $('img').attr('src',_year+'/'+subj+'/'+subj+num+'.gif');
+        $('p#forward').click(function () {
+            if(num===pageDic[subj])alert("its end!!");
+            else {num++;
+                $('img').attr('src',_year+'/'+subj+'/'+subj+num+'.gif');
+            }
+
+        })
+
+        $('p#backward').click(function () {
+            if(num===1)alert("ur brain booooooooooooooooooms!!!!");
+            else {num--;
+                $('img').attr('src',_year+'/'+subj+'/'+subj+num+'.gif');
+            }
+
+        })
+
+    })
+
+
+
+</script>
+</body>
+</html>

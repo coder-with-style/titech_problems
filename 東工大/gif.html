@@ -40,6 +40,7 @@
             if(num===pageDic[subj])alert("its end!!");
             else {num++;
                 $('img').attr('src',_year+'/'+subj+'/'+subj+num+'.gif');
+                $('html,body').animate({scrollTop:0},"fast");
             }
 
         })
@@ -48,6 +49,7 @@
             if(num===1)alert("ur brain booooooooooooooooooms!!!!");
             else {num--;
                 $('img').attr('src',_year+'/'+subj+'/'+subj+num+'.gif');
+                $('html,body').animate({scrollTop:0},"fast");
             }
 
         })

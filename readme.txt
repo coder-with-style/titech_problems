@@ -1,1 +1,1 @@
-indexing.html¤òé_¤±£¡
+open index.html!

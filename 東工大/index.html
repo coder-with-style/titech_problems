@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <script src="jquery-3.2.1.min.js"></script>
+    <style>
+
+        body{
+            margin:0;
+            padding:0;
+            background:#f1f1f1;
+            font:170% Arial, Helvetica, sans-serif;
+            color:#555;
+            line-height:150%;
+            text-align:left;
+        }
+        a{
+            text-decoration:none;
+            color:#057fac;
+        }
+
+        h1{
+            font-size:140%;
+            margin:auto;
+            line-height:80px;
+            text-align: center;
+        }
+        h2{
+            font-size:120%;
+        }
+
+        form{
+            margin:1em 0;
+            padding:.2em 20px;
+            background:#eee;
+        }
+        table {
+            margin: 20px auto;
+        }
+        #main{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+
+    <h1>東工大過去問題集</h1>
+    <table cellspacing="0" cellpadding="0">
+        <tr>
+            <td></td>
+            <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数学</th>
+            <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;英語</th>
+            <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;物理</th>
+            <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;化学</th>
+        </tr>
+        <tr>
+            <th>2017</th>
+            <td><span class="q" ref="2017" rel="math">&nbsp;&nbsp;問題&nbsp;</span><span class="a"    ref="2017" rel="math">解説&nbsp;</span></td>
+            <td><span class="q" ref="2017" rel="english">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2017" rel="english">解説&nbsp;</span></td>
+            <td><span class="q" ref="2017" rel="physics">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2017" rel="physics">解説&nbsp;</span></td>
+            <td><span class="q" ref="2017" rel="chemistry">&nbsp;&nbsp;問題&nbsp;</span><span class="a" ref="2017" rel="chemistry">解説&nbsp;</span></td>
+        </tr>
+
+        <tr>
+            <th>2016</th>
+            <td><span class="q" ref="2016" rel="math">&nbsp;&nbsp;問題&nbsp;</span><span class="a"    ref="2016" rel="math">解説&nbsp;</span></td>
+            <td><span class="q" ref="2016" rel="english">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2016" rel="english">解説&nbsp;</span></td>
+            <td><span class="q" ref="2016" rel="physics">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2016" rel="physics">解説&nbsp;</span></td>
+            <td><span class="q" ref="2016" rel="chemistry">&nbsp;&nbsp;問題&nbsp;</span><span class="a" ref="2016" rel="chemistry">解説&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>2015</th>
+            <td><span class="q" ref="2015" rel="math">&nbsp;&nbsp;問題&nbsp;</span><span class="a"    ref="2015" rel="math">解説&nbsp;</span></td>
+            <td><span class="q" ref="2015" rel="english">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2015" rel="english">解説&nbsp;</span></td>
+            <td><span class="q" ref="2015" rel="physics">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2015" rel="physics">解説&nbsp;</span></td>
+            <td><span class="q" ref="2015" rel="chemistry">&nbsp;&nbsp;問題&nbsp;</span><span class="a" ref="2015" rel="chemistry">解説&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>2014</th>
+            <td><span class="q" ref="2014" rel="math">&nbsp;&nbsp;問題&nbsp;</span><span class="a"    ref="2014" rel="math">解説&nbsp;</span></td>
+            <td><span class="q" ref="2014" rel="english">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2014" rel="english">解説&nbsp;</span></td>
+            <td><span class="q" ref="2014" rel="physics">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2014" rel="physics">解説&nbsp;</span></td>
+            <td><span class="q" ref="2014" rel="chemistry">&nbsp;&nbsp;問題&nbsp;</span><span class="a" ref="2014" rel="chemistry">解説&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>2013</th>
+            <td><span class="q" ref="2013" rel="math">&nbsp;&nbsp;問題&nbsp;</span><span class="a"    ref="2013" rel="math">解説&nbsp;</span></td>
+            <td><span class="q" ref="2013" rel="english">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2013" rel="english">解説&nbsp;</span></td>
+            <td><span class="q" ref="2013" rel="physics">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2013" rel="physics">解説&nbsp;</span></td>
+            <td><span class="q" ref="2013" rel="chemistry">&nbsp;&nbsp;問題&nbsp;</span><span class="a" ref="2013" rel="chemistry">解説&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>2012</th>
+            <td><span class="q" ref="2012" rel="math">&nbsp;&nbsp;問題&nbsp;</span><span class="a"    ref="2012" rel="math">解説&nbsp;</span></td>
+            <td><span class="q" ref="2012" rel="english">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2012" rel="english">解説&nbsp;</span></td>
+            <td><span class="q" ref="2012" rel="physics">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2012" rel="physics">解説&nbsp;</span></td>
+            <td><span class="q" ref="2012" rel="chemistry">&nbsp;&nbsp;問題&nbsp;</span><span class="a" ref="2012" rel="chemistry">解説&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>2011</th>
+            <td><span class="q" ref="2011" rel="math">&nbsp;&nbsp;問題&nbsp;</span><span class="a"    ref="2011" rel="math">解説&nbsp;</span></td>
+            <td><span class="q" ref="2011" rel="english">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2011" rel="english">解説&nbsp;</span></td>
+            <td><span class="q" ref="2011" rel="physics">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2011" rel="physics">解説&nbsp;</span></td>
+            <td><span class="q" ref="2011" rel="chemistry">&nbsp;&nbsp;問題&nbsp;</span><span class="a" ref="2011" rel="chemistry">解説&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>2010</th>
+            <td><span class="q" ref="2010" rel="math">&nbsp;&nbsp;問題&nbsp;</span><span class="a"    ref="2010" rel="math">解説&nbsp;</span></td>
+            <td><span class="q" ref="2010" rel="english">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2010" rel="english">解説&nbsp;</span></td>
+            <td><span class="q" ref="2010" rel="physics">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2010" rel="physics">解説&nbsp;</span></td>
+            <td><span class="q" ref="2010" rel="chemistry">&nbsp;&nbsp;問題&nbsp;</span><span class="a" ref="2010" rel="chemistry">解説&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>2009</th>
+            <td><span class="q" ref="2009" rel="math">&nbsp;&nbsp;問題&nbsp;</span><span class="a"    ref="2009" rel="math">解説&nbsp;</span></td>
+            <td><span class="q" ref="2009" rel="english">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2009" rel="english">解説&nbsp;</span></td>
+            <td><span class="q" ref="2009" rel="physics">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2009" rel="physics">解説&nbsp;</span></td>
+            <td><span class="q" ref="2009" rel="chemistry">&nbsp;&nbsp;問題&nbsp;</span><span class="a" ref="2009" rel="chemistry">解説&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>2008</th>
+            <td><span class="q" ref="2008" rel="math">&nbsp;&nbsp;問題&nbsp;</span><span class="a"    ref="2008" rel="math">解説&nbsp;</span></td>
+            <td><span class="q" ref="2008" rel="english">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2008" rel="english">解説&nbsp;</span></td>
+            <td><span class="q" ref="2008" rel="physics">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2008" rel="physics">解説&nbsp;</span></td>
+            <td><span class="q" ref="2008" rel="chemistry">&nbsp;&nbsp;問題&nbsp;</span><span class="a" ref="2008" rel="chemistry">解説&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>2007</th>
+            <td><span class="q" ref="2007" rel="math">&nbsp;&nbsp;問題&nbsp;</span><span class="a"    ref="2007" rel="math">解説&nbsp;</span></td>
+            <td><span class="q" ref="2007" rel="english">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2007" rel="english">解説&nbsp;</span></td>
+            <td><span class="q" ref="2007" rel="physics">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2007" rel="physics">解説&nbsp;</span></td>
+            <td><span class="q" ref="2007" rel="chemistry">&nbsp;&nbsp;問題&nbsp;</span><span class="a" ref="2007" rel="chemistry">解説&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>2006</th>
+            <td><span class="q" ref="2006" rel="math">&nbsp;&nbsp;問題&nbsp;</span><span class="a"    ref="2006" rel="math">解説&nbsp;</span></td>
+            <td><span class="q" ref="2006" rel="english">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2006" rel="english">解説&nbsp;</span></td>
+            <td><span class="q" ref="2006" rel="physics">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2006" rel="physics">解説&nbsp;</span></td>
+            <td><span class="q" ref="2006" rel="chemistry">&nbsp;&nbsp;問題&nbsp;</span><span class="a" ref="2006" rel="chemistry">解説&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>2005</th>
+            <td><span class="q" ref="2005" rel="math">&nbsp;&nbsp;問題&nbsp;</span><span class="a"    ref="2005" rel="math">解説&nbsp;</span></td>
+            <td><span class="q" ref="2005" rel="english">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2005" rel="english">解説&nbsp;</span></td>
+            <td><span class="q" ref="2005" rel="physics">&nbsp;&nbsp;問題&nbsp;</span><span class="a"  ref="2005" rel="physics">解説&nbsp;</span></td>
+            <td><span class="q" ref="2005" rel="chemistry">&nbsp;&nbsp;問題&nbsp;</span><span class="a" ref="2005" rel="chemistry">解説&nbsp;</span></td>
+        </tr>
+
+
+    </table>
+</div>
+
+
+
+　　　
+<script>
+    $(function () {
+//        window.location.href="qchemistry.pdf";
+        $('span').click(function () {
+            if(this.getAttribute('class')==="a"){
+                aswin=window.open("gif.html?id="+this.getAttribute('rel')+"&"+"year="+this.getAttribute('ref')+"&"+"subj="+this.getAttribute('rel'),'as','width=680,height=650,resizable=yes,scrollbars=yes');
+                aswin.focus();
+            }
+            else window.location.href=this.getAttribute('ref')+"/"+this.getAttribute("rel")+".pdf"
+        })
+    })
+
+</script>
+</body>
+</html>

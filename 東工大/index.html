@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
-    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="jquery.cookie.js"></script>
     <style>
 
         body{
@@ -151,6 +152,7 @@
 
 
     </table>
+    <button style="position: relative;left: 50%;height: 50px; font-size: large;">Clear all cookies</button>
 </div>
 
 
@@ -158,15 +160,74 @@
 　　　
 <script>
     $(function () {
-//        window.location.href="qchemistry.pdf";
-        $('span').click(function () {
-            if(this.getAttribute('class')==="a"){
-                aswin=window.open("gif.html?id="+this.getAttribute('rel')+"&"+"year="+this.getAttribute('ref')+"&"+"subj="+this.getAttribute('rel'),'as','width=680,height=650,resizable=yes,scrollbars=yes');
-                aswin.focus();
+
+            $('span').click(function () {
+                var str=$.cookie('read')||"";
+                str+=this.getAttribute('class')+this.getAttribute('ref')+this.getAttribute('rel')+",";
+                $.cookie('read',str,{ expires: 30 });
+                $(this).css('color', 'blue');
+                if(this.getAttribute('class')==="a"){
+                    aswin=window.open("gif.html?id="+this.getAttribute('rel')+"&"+"year="+this.getAttribute('ref')+"&"+"subj="+this.getAttribute('rel'),'as','width=680,height=650,resizable=yes,scrollbars=yes');
+                    aswin.focus();
+                }
+                else window.location.href=this.getAttribute('ref')+"/"+this.getAttribute("rel")+".pdf"
+            });
+
+            if($.cookie('read')!=false){
+//                for (var ele of ($.cookie('read')).split(',')){
+//                    var t=ele.substring(0,1);
+//                    var y=ele.substring(1,5);
+//                    var s=ele.substring(5);
+//
+//                    $("span[ref="+y+"][class="+t+"][rel="+s+"]").css('color','blue');
+//
+//                    $('button').click(function () {
+//                        $.removeCookie('read');
+//                        window.location.reload();
+//                    })
+//
+//
+//                }
+                var _iteratorNormalCompletion = true;
+                var _didIteratorError = false;
+                var _iteratorError = undefined;
+
+                try {
+                    for (var _iterator = $.cookie('read').split(',')[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                        var ele = _step.value;
+
+                        var t = ele.substring(0, 1);
+                        var y = ele.substring(1, 5);
+                        var s = ele.substring(5);
+
+                        $("span[ref=" + y + "][class=" + t + "][rel=" + s + "]").css('color', 'blue');
+
+                        $('button').click(function () {
+                            $.removeCookie('read');
+                            window.location.reload();
+                        });
+                    }
+                } catch (err) {
+                    _didIteratorError = true;
+                    _iteratorError = err;
+                } finally {
+                    try {
+                        if (!_iteratorNormalCompletion && _iterator.return) {
+                            _iterator.return();
+                        }
+                    } finally {
+                        if (_didIteratorError) {
+                            throw _iteratorError;
+                        }
+                    }
+                }
             }
-            else window.location.href=this.getAttribute('ref')+"/"+this.getAttribute("rel")+".pdf"
+
+
+
+
         })
-    })
+
 
 </script>
 </body>
